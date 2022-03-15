@@ -18,9 +18,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 
 ## Descrição 🔖
-Este sistema tem a principal função de adicionar, remover e editar livros da instituição de caridade.
-Não tem limite de quantidade de livros que uma instituição pode ter.
-Não há como cadastrar os mesmos livros.
+- Este sistema tem a principal função de adicionar, remover e editar livros da instituição de caridade.
+- Não há limite de quantidade de livros que uma instituição pode cadastrar.
+- Não há como cadastrar os mesmos livros.
 
 
 ## Funcionalidades 🛠✨
@@ -31,4 +31,7 @@ Não há como cadastrar os mesmos livros.
 - Editar livros cadastrados
 
 
-Feito com ♥ by Carlos Tavares
+
+
+
+by Carlos Tavares
