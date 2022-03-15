@@ -4,6 +4,10 @@
 Sistema de doação de livros para sebos e instituição de caridade.
 </p>
 
+<p align="center">
+<img src="https://i.pinimg.com/564x/ac/87/ec/ac87ec5fea71aad567584d4b9fa4656f.jpg" align="center" style="border-radius: 10px" />
+</p>
+
 
 ## Tecnologias 🚀 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
