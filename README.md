@@ -13,7 +13,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - PostgreSQL
 
 
-### Descrição
+## Descrição 🔖
 Este sistema tem a principal função de adicionar, remover e editar livros da instituição de caridade.
 Não tem limite de quantidade de livros que uma instituição pode ter.
 Não há como cadastrar os mesmos livros.
