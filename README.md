@@ -3,9 +3,6 @@
 <p align="center"> 
 Sistema de doação de livros para sebos e instituição de caridade.
 </p>
-<p align="center">
-<img src="/assets/images/video.gif" align="center" style="border-radius: 10px" />
-</p>
 
 
 ## Tecnologias 🚀 
