@@ -71,5 +71,4 @@ module.exports = {
     verificarNomeInstituicao,
     verificarAdministrador,
     verificarEdicaoAdm
-
 }

@@ -1,28 +1,20 @@
 {
-  "name": "teste_begin",
+  "name": "begin_teste_carlostavares",
   "version": "1.0.0",
-  "description": "![](https://i.imgur.com/xG74tOh.png)",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/carlostsa10/teste_begin.git"
+    "dev": "nodemon ./src/index.js "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "date-fns": "^2.28.0",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
+    "nodemailer": "^6.7.2",
     "pg": "^8.7.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  },
-  "bugs": {
-    "url": "https://github.com/carlostsa10/teste_begin/issues"
-  },
-  "homepage": "https://github.com/carlostsa10/teste_begin#readme"
+  }
 }

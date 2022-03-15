@@ -1,4 +1,5 @@
 const { cadastrarInstituicao, listarInstituicoes, cadastrarLivro, listarLivros, editarLivro, cadastrarAdministrador, editarAdministrador } = require('../controladores/controladores');
+
 const { verificarNomeInstituicao, verificarAdministrador, verificarEdicaoAdm } = require('../intermediarios/intermediarios');
 
 const express = require("express");

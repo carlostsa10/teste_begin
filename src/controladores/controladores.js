@@ -1,5 +1,6 @@
 const conection = require("../banco de dados/bancodedados")
 const queries = require("../banco de dados/queries");
+const nodemailer = require("nodemailer");
 
 const listarInstituicoes = async (req, res) => {
     try {
@@ -93,10 +94,7 @@ const editarLivro = async (req, res) => {
 }
 
 const cadastrarAdministrador = async (req, res) => {
-    const { nome,
-        email,
-        usuario,
-        senha } = req.body;
+    const { nome, email, usuario, senha } = req.body;
 
     try {
         const administrador = await conection.query(queries.cadastrarAdministrador, [nome, email, usuario, senha]);
@@ -106,6 +104,8 @@ const cadastrarAdministrador = async (req, res) => {
                 "mensagem": "Não foi possível cadastrar este administrador!"
             })
         }
+        enviarEmail()
+
         return res.status(201).json({
             "mensagem": "Administrador cadastrado com sucesso!"
         })
@@ -113,6 +113,28 @@ const cadastrarAdministrador = async (req, res) => {
     } catch (error) {
         return res.status(400).json(error.message)
     }
+}
+
+function enviarEmail() {
+    let transporter = nodemailer.createTransport({
+        host: "smtp.umbler.com",
+        port: 587,
+        secure: false,
+        auth: {
+            user: "carlos@bookhero.com.br",
+            pass: "vintageCulture12"
+        }
+    });
+    transporter.sendMail({
+        from: "Carlos Tavares <carlos@bookhero.com.br>",
+        to: "ariangrande@itunes.com",
+        subject: "Bem-vindo!!! Confirme sua conta.",
+        text: "Olá! Você criou com sucesso uma conta no nosso serviço. Para ativá-la, clique a seguir para confirmar seu endereço de email."
+    }).then(message => {
+
+    }).catch(error => {
+        return res.status(400).json(error.message)
+    })
 }
 
 const editarAdministrador = async (req, res) => {
@@ -143,5 +165,4 @@ module.exports = {
     listarLivros,
     cadastrarAdministrador,
     editarAdministrador,
-
 }
